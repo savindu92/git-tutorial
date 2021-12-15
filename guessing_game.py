@@ -1,4 +1,7 @@
+#! /usr/bin/python3
+
 import random
+
 def guess_loop():
     number_to_guess = random.randint(1, 100)
     print("I have in mind a number in between 1 and 100, can you find it?")
@@ -14,4 +17,5 @@ def guess_loop():
                 return
         except ValueError as err:
             print("Invalid input , please enter an integer")
-    guess_loop ()
+
+guess_loop()
